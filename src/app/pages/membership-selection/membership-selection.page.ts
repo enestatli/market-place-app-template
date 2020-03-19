@@ -16,7 +16,7 @@ export class MembershipSelectionPage implements OnInit {
     this.navCtrl.navigateRoot(allRoutes.settings); //clientRegister
   }
 
-  goMemberRegister() {
-    this.navCtrl.navigateRoot(allRoutes.settings); //memberRegister
+  goMemberRegisterType() {
+    this.navCtrl.navigateRoot(allRoutes.memberRegisterType); //MemberRegisterType
   }
 }

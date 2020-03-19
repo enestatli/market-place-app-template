@@ -6,5 +6,6 @@ export const allRoutes = {
   settings: "ayarlar",
   tabs: "tabs",
   welcome: "welcome",
-  membershipSelection: "membership-selection"
+  membershipSelection: "membership-selection",
+  memberRegisterType: "member-register-type"
 };

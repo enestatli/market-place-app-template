@@ -39,6 +39,13 @@ const routes: Routes = [
       import("./pages/membership-selection/membership-selection.module").then(
         m => m.MembershipSelectionPageModule
       )
+  },
+  {
+    path: allRoutes.memberRegisterType,
+    loadChildren: () =>
+      import("./pages/member-register-type/member-register-type.module").then(
+        m => m.MemberRegisterTypePageModule
+      )
   }
 ];
 @NgModule({
