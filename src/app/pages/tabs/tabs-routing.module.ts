@@ -1,14 +1,15 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { TabsPage } from './tabs.page';
+import { allRoutes } from 'src/app/models/common-models';
 
 const routes: Routes = [
   {
-    path: 'tabs',
+    path: '',
     component: TabsPage,
     children: [
       {
-        path: 'intro',
+        path: allRoutes.home,
         children: [
           {
             path: '',
@@ -18,7 +19,7 @@ const routes: Routes = [
         ]
       },
       {
-        path: 'favorites',
+        path: allRoutes.favorites,
         children: [
           {
             path: '',
@@ -28,7 +29,7 @@ const routes: Routes = [
         ]
       },
       {
-        path: 'profile',
+        path: allRoutes.profile,
         children: [
           {
             path: '',
@@ -36,18 +37,8 @@ const routes: Routes = [
               import('../profile/profile.module').then(m => m.ProfilePageModule)
           }
         ]
-      },
-      {
-        path: '',
-        redirectTo: '/tabs/tab1',
-        pathMatch: 'full'
       }
     ]
-  },
-  {
-    path: '',
-    redirectTo: '/tabs/tab1',
-    pathMatch: 'full'
   }
 ];
 

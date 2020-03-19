@@ -1,28 +1,23 @@
 import { NgModule } from "@angular/core";
 import { PreloadAllModules, RouterModule, Routes } from "@angular/router";
+import { allRoutes } from './models/common-models';
 
 const routes: Routes = [
   {
-    path: "",
-    loadChildren: () => import("./pages/tabs/tabs.module").then(m => m.TabsPageModule)
+    path: '',
+    redirectTo: allRoutes.guide,
+    pathMatch: 'full'
   },
   {
-    path: "guide",
+    path: allRoutes.guide,
     loadChildren: () =>
       import("./pages/guide/guide.module").then(m => m.GuidePageModule)
   },
   {
-    path: 'intro',
-    loadChildren: () => import('./pages/intro/intro.module').then( m => m.IntroPageModule)
-  },
-  {
-    path: 'profile',
-    loadChildren: () => import('./pages/profile/profile.module').then( m => m.ProfilePageModule)
-  },
-  {
-    path: 'favorites',
-    loadChildren: () => import('./pages/favorites/favorites.module').then( m => m.FavoritesPageModule)
+    path: allRoutes.tabs,
+    loadChildren: () => import('./pages/tabs/tabs.module').then(m => m.TabsPageModule)
   }
+  
 ];
 @NgModule({
   imports: [
@@ -30,4 +25,4 @@ const routes: Routes = [
   ],
   exports: [RouterModule]
 })
-export class AppRoutingModule {}
+export class AppRoutingModule { }

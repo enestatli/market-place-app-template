@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
+import { allRoutes } from 'src/app/models/common-models';
+import { NavController } from '@ionic/angular';
 
 @Component({
   selector: 'app-guide',
@@ -7,9 +10,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class GuidePage implements OnInit {
 
-  constructor() { }
+  constructor(public navCtrl:NavController) { }
 
   ngOnInit() {
+  }
+
+  proceed(){
+    this.navCtrl.navigateRoot(allRoutes.tabs);
   }
 
 }
