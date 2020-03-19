@@ -5,6 +5,11 @@ import { allRoutes } from "./models/common-models";
 const routes: Routes = [
   {
     path: "",
+    redirectTo: allRoutes.welcome,
+    pathMatch: "full"
+  },
+  {
+    path: "",
     redirectTo: allRoutes.guide,
     pathMatch: "full"
   },
@@ -22,6 +27,11 @@ const routes: Routes = [
     path: allRoutes.settings,
     loadChildren: () =>
       import("./pages/settings/settings.module").then(m => m.SettingsPageModule)
+  },
+  {
+    path: "welcome",
+    loadChildren: () =>
+      import("./pages/welcome/welcome.module").then(m => m.WelcomePageModule)
   }
 ];
 @NgModule({
