@@ -1,12 +1,12 @@
 import { NgModule } from "@angular/core";
 import { PreloadAllModules, RouterModule, Routes } from "@angular/router";
-import { allRoutes } from './models/common-models';
+import { allRoutes } from "./models/common-models";
 
 const routes: Routes = [
   {
-    path: '',
+    path: "",
     redirectTo: allRoutes.guide,
-    pathMatch: 'full'
+    pathMatch: "full"
   },
   {
     path: allRoutes.guide,
@@ -15,9 +15,14 @@ const routes: Routes = [
   },
   {
     path: allRoutes.tabs,
-    loadChildren: () => import('./pages/tabs/tabs.module').then(m => m.TabsPageModule)
+    loadChildren: () =>
+      import("./pages/tabs/tabs.module").then(m => m.TabsPageModule)
+  },
+  {
+    path: allRoutes.settings,
+    loadChildren: () =>
+      import("./pages/settings/settings.module").then(m => m.SettingsPageModule)
   }
-  
 ];
 @NgModule({
   imports: [
@@ -25,4 +30,4 @@ const routes: Routes = [
   ],
   exports: [RouterModule]
 })
-export class AppRoutingModule { }
+export class AppRoutingModule {}
