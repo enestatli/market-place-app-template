@@ -1,9 +1,20 @@
-<ion-header>
-  <ion-toolbar>
-    <ion-title>membership-selection</ion-title>
-  </ion-toolbar>
-</ion-header>
+<ion-content fullscreen="true">
+  <ion-slides>
+    <ion-slide>
+      <div class="slide">
+        <div class="image-wrapper">
+          <img src="https://via.placeholder.com/931x739" alt="alt text" />
+        </div>
+      </div>
+    </ion-slide>
+  </ion-slides>
 
-<ion-content>
-
+  <div class="header">
+    <h1>Brand Name</h1>
+  </div>
+  <section class="button-container">
+    <ion-button class="ion-padding" expand="block" (click)="goClientRegister()">Client</ion-button>
+    <ion-button class="ion-padding" expand="block" (click)="goMemberRegister()">Member</ion-button>
+  </section>
+  <p size="small">By continuing, you agree to Terms & Conditions</p>
 </ion-content>
