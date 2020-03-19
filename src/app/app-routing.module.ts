@@ -32,6 +32,13 @@ const routes: Routes = [
     path: "welcome",
     loadChildren: () =>
       import("./pages/welcome/welcome.module").then(m => m.WelcomePageModule)
+  },
+  {
+    path: allRoutes.membershipSelection,
+    loadChildren: () =>
+      import("./pages/membership-selection/membership-selection.module").then(
+        m => m.MembershipSelectionPageModule
+      )
   }
 ];
 @NgModule({

@@ -5,5 +5,6 @@ export const allRoutes = {
   profile: "profil",
   settings: "ayarlar",
   tabs: "tabs",
-  welcome: "welcome"
+  welcome: "welcome",
+  membershipSelection: "membership-selection"
 };
