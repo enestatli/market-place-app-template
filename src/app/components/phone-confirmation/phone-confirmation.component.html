@@ -1,0 +1,21 @@
+<ion-content class="ion-text-center" fullscreen="true">
+  <!-- <div class="slide">
+    <div class="image-wrapper">
+      <img src="https://via.placeholder.com/931x739" alt="alt text" />
+    </div>
+    <p size="small">Enter your mobile number we will send you the OTP to verify later</p>
+  </div> -->
+  <div style="margin-top: 50%;">
+    <div class="container">
+      <ion-item class="ion-padding">
+        <ion-label></ion-label>
+        <ion-input type="tel" value="+90 555 555 55 55"></ion-input>
+      </ion-item>
+    </div>
+    <section class="button-container">
+      <ion-button (click)="openConfirmationModal()" class="ion-padding" expand="block">Submit</ion-button>
+    </section>
+  </div>
+</ion-content>
+
+<app-membership-footer></app-membership-footer>
