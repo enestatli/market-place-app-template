@@ -67,6 +67,11 @@ const routes: Routes = [
       import("./pages/client-register/client-register.module").then(
         m => m.ClientRegisterPageModule
       )
+  },
+  {
+    path: allRoutes.feed,
+    loadChildren: () =>
+      import("./pages/feed/feed.module").then(m => m.FeedPageModule)
   }
 ];
 @NgModule({

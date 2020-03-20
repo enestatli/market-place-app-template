@@ -17,6 +17,6 @@ export class MemberRegisterPage implements OnInit {
   }
 
   goFeed() {
-    this.NavCtrl.navigateRoot(allRoutes.settings); // feed route
+    this.NavCtrl.navigateRoot(allRoutes.feed); // feed route
   }
 }

@@ -10,5 +10,6 @@ export const allRoutes = {
   memberRegisterType: "member-register-type",
   phoneRegister: "phone-register",
   memberRegister: "member-register",
-  clientRegister: "client-register"
+  clientRegister: "client-register",
+  feed: "feed"
 };
