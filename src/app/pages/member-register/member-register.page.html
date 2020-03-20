@@ -1,0 +1,30 @@
+<ion-content fullscreen="true">
+  <ion-avatar class="ion-align-items-center">
+    <img src="https://gravatar.com/avatar/dba6bae8c566f9d4041fb9cd9ada7741?d=identicon&f=y">
+  </ion-avatar>
+
+  <form class="ion-padding">
+    <ion-list lines="full" class="ion-no-margin ion-no-padding">
+      <ion-item>
+        <ion-label position="stacked">First Name <ion-text color="danger">*</ion-text>
+        </ion-label>
+        <ion-input required type="text" aria-placeholder="Your Name"></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label position="stacked">Last Name <ion-text color="danger">*</ion-text>
+        </ion-label>
+        <ion-input required type="text" oninput="handleLastNameValue(event)"></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label position="stacked">Password <ion-text color="danger">*</ion-text>
+        </ion-label>
+        <ion-input required type="password"></ion-input>
+      </ion-item>
+    </ion-list>
+  </form>
+  <ion-button expand="block" fill="outline" class="ion-padding">Submit</ion-button>
+</ion-content>
+
+<app-footer-message message="By continuing, you agree to Terms & Conditions"></app-footer-message>
