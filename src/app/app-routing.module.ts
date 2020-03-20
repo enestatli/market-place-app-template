@@ -60,6 +60,13 @@ const routes: Routes = [
       import("./pages/member-register/member-register.module").then(
         m => m.MemberRegisterPageModule
       )
+  },
+  {
+    path: allRoutes.clientRegister,
+    loadChildren: () =>
+      import("./pages/client-register/client-register.module").then(
+        m => m.ClientRegisterPageModule
+      )
   }
 ];
 @NgModule({

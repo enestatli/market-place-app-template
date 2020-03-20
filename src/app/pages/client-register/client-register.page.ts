@@ -3,16 +3,16 @@ import { NavController } from "@ionic/angular";
 import { allRoutes } from "src/app/models/common-models";
 
 @Component({
-  selector: "app-member-register",
-  templateUrl: "./member-register.page.html",
-  styleUrls: ["./member-register.page.scss"]
+  selector: "app-client-register",
+  templateUrl: "./client-register.page.html",
+  styleUrls: ["./client-register.page.scss"]
 })
-export class MemberRegisterPage implements OnInit {
+export class ClientRegisterPage implements OnInit {
   constructor(public NavCtrl: NavController) {}
 
   ngOnInit() {}
 
-  submitMemberRegister() {
+  submitClientRegister() {
     // Submit form and redirect to the feed
   }
 

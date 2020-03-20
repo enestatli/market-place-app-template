@@ -9,5 +9,6 @@ export const allRoutes = {
   membershipSelection: "membership-selection",
   memberRegisterType: "member-register-type",
   phoneRegister: "phone-register",
-  memberRegister: "member-register"
+  memberRegister: "member-register",
+  clientRegister: "client-register"
 };
