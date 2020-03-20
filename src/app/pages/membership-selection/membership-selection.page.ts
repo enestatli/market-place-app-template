@@ -13,7 +13,8 @@ export class MembershipSelectionPage implements OnInit {
   ngOnInit() {}
 
   goClientRegister() {
-    this.navCtrl.navigateRoot(allRoutes.settings); //clientRegister
+    this.navCtrl.navigateRoot(allRoutes.clientRegister); //clientRegister
+    console.log("Client Register router works?");
   }
 
   goMemberRegisterType() {

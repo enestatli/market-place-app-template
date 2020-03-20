@@ -8,7 +8,9 @@ export const allRoutes = {
   welcome: "welcome",
   membershipSelection: "membership-selection",
   memberRegisterType: "member-register-type",
-  phoneRegister: "phone-register"
+  phoneRegister: "phone-register",
+  memberRegister: "member-register",
+  clientRegister: "client-register"
 };
 
 export const firebaseConfig = {

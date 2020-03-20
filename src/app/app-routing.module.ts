@@ -53,6 +53,20 @@ const routes: Routes = [
       import("./pages/phone-register/phone-register.module").then(
         m => m.PhoneRegisterPageModule
       )
+  },
+  {
+    path: allRoutes.memberRegister,
+    loadChildren: () =>
+      import("./pages/member-register/member-register.module").then(
+        m => m.MemberRegisterPageModule
+      )
+  },
+  {
+    path: allRoutes.clientRegister,
+    loadChildren: () =>
+      import("./pages/client-register/client-register.module").then(
+        m => m.ClientRegisterPageModule
+      )
   }
 ];
 @NgModule({

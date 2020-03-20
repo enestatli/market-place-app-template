@@ -1,19 +1,22 @@
 <ion-content class="ion-text-center" fullscreen="true">
-  <!-- <div class="slide">
-    <div class="image-wrapper">
-      <img src="https://via.placeholder.com/931x739" alt="alt text" />
-    </div>
-    <p size="small">Enter your mobile number we will send you the OTP to verify later</p>
-  </div> -->
-  <div style="margin-top: 50%;">
+  <!-- TODO, close button should be added -->
+  <div class="header">
+    <h3>Enter Code</h3>
+    <p>* * * * *</p>
+    <p>We have sent you an SMS on +90 555 555 55 55 with 6 digit verification code.</p>
+  </div>
+  <div>
     <div class="container">
       <ion-item class="ion-padding">
-        <ion-label></ion-label>
-        <ion-input type="tel" value="+90 555 555 55 55"></ion-input>
+        <ion-label>Enter Code : </ion-label>
+        <ion-input type="number" inputmode="numeric" placeholder="   1  2  3  4  5  6  "></ion-input>
       </ion-item>
     </div>
     <section class="button-container">
-      <ion-button (click)="openConfirmationModal()" class="ion-padding" expand="block">Submit</ion-button>
+      <ion-button (click)="verify()" class="ion-padding" expand="block">Verify</ion-button>
+      <br />
+      <p>Did not receive the code?</p>
+      <ion-button fill="outline">Re-send</ion-button>
     </section>
   </div>
 </ion-content>
