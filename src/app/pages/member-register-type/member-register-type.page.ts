@@ -12,7 +12,7 @@ export class MemberRegisterTypePage implements OnInit {
 
   ngOnInit() {}
 
-  goMemberRegisterPhoneInput() {
-    this.navCtrl.navigateRoot(allRoutes.settings); //MemberRegisterPhoneInput
+  goPhoneRegister() {
+    this.navCtrl.navigateRoot(allRoutes.phoneRegister); //MemberRegisterPhoneInput
   }
 }

@@ -7,5 +7,6 @@ export const allRoutes = {
   tabs: "tabs",
   welcome: "welcome",
   membershipSelection: "membership-selection",
-  memberRegisterType: "member-register-type"
+  memberRegisterType: "member-register-type",
+  phoneRegister: "phone-register"
 };
