@@ -1,9 +1,9 @@
 import { NgModule, CUSTOM_ELEMENTS_SCHEMA } from "@angular/core";
 import { CommonModule } from "@angular/common";
 import { PhoneConfirmationComponent } from "./phone-confirmation/phone-confirmation.component";
-import { MembershipFooterComponent } from "./membership-footer/membership-footer.component";
+import { FooterMessageComponent } from "./footer-message/footer-message.component";
 
-const components = [PhoneConfirmationComponent, MembershipFooterComponent];
+const components = [PhoneConfirmationComponent, FooterMessageComponent];
 
 @NgModule({
   declarations: [...components],
