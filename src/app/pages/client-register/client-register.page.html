@@ -1,7 +1,15 @@
 <ion-content fullscreen="true">
-  <ion-avatar>
-    <img src="https://gravatar.com/avatar/dba6bae8c566f9d4041fb9cd9ada7741?d=identicon&f=y">
-  </ion-avatar>
+  <ion-grid>
+    <ion-row class="ion-justify-content-center">
+      <i-col style="height: 100px; padding-top: 50px;">
+        <ion-avatar *ngIf="hasFile">
+          <img src="https://gravatar.com/avatar/dba6bae8c566f9d4041fb9cd9ada7741?d=identicon&f=y">
+        </ion-avatar>
+        <ion-icon *ngIf="!hasFile" name="add-circle" style="font-size: 40px;">
+        </ion-icon>
+      </i-col>
+    </ion-row>
+  </ion-grid>
 
   <form class="ion-padding">
     <ion-list lines="full" class="ion-no-margin ion-no-padding">

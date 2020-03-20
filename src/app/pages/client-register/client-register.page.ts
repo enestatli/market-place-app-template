@@ -8,6 +8,7 @@ import { allRoutes } from "src/app/models/common-models";
   styleUrls: ["./client-register.page.scss"]
 })
 export class ClientRegisterPage implements OnInit {
+  hasFile: boolean = false;
   constructor(public NavCtrl: NavController) {}
 
   ngOnInit() {}
