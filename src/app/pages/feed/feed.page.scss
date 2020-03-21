@@ -1,6 +1,19 @@
-// ion-item {
-//     margin-top: 15px;
-//     border-width: var(--border-width, 1px);
-//     border-color: var(--border-color, black);
-//     border-radius: var(--border-radius, 5);
+.header {
+    padding-top: 2rem;
+}
+
+.toolbar-search {
+    padding-left: 0.7rem;
+}
+
+// ion-toolbar {
+//     --padding-end: 12px !important;
+//     --padding-bottom: 12px !important;
+//     --padding-start: 20px !important;
+// }
+
+// ion-toolbar {
+//     --color: #000;
+//     --placeholder-color: white;
+//     --box-shadow: 3px 4px 17px 1px rgba(179, 179, 179, 1);
 // }
