@@ -11,7 +11,8 @@ import { AppComponent } from "./app.component";
 import { ComponentsModule } from "./components/components.module";
 import { ServiceWorkerModule } from '@angular/service-worker';
 import { environment } from '../environments/environment';
-
+import { AngularFirestoreModule } from '@angular/fire/firestore';
+import { AngularFireModule } from '@angular/fire';
 @NgModule({
   declarations: [AppComponent],
   entryComponents: [],
@@ -20,6 +21,8 @@ import { environment } from '../environments/environment';
     ComponentsModule,
     IonicModule.forRoot(),
     AppRoutingModule,
+    AngularFirestoreModule,
+    AngularFireModule.initializeApp(environment.firebaseConfig),
     ServiceWorkerModule.register('ngsw-worker.js', { enabled: environment.production })
   ],
   providers: [
@@ -29,4 +32,4 @@ import { environment } from '../environments/environment';
   ],
   bootstrap: [AppComponent]
 })
-export class AppModule {}
+export class AppModule { }
