@@ -67,11 +67,12 @@ const routes: Routes = [
       import("./pages/client-register/client-register.module").then(
         m => m.ClientRegisterPageModule
       )
-  },  {
-    path: 'search',
-    loadChildren: () => import('./pages/search/search.module').then( m => m.SearchPageModule)
+  },
+  {
+    path: allRoutes.search,
+    loadChildren: () =>
+      import("./pages/search/search.module").then(m => m.SearchPageModule)
   }
-
 ];
 @NgModule({
   imports: [

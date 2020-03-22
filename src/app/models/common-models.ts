@@ -10,7 +10,8 @@ export const allRoutes = {
   phoneRegister: "phone-register",
   memberRegister: "member-register",
   clientRegister: "client-register",
-  feed: "feed"
+  feed: "feed",
+  search: "search"
 };
 
 export const firebaseConfig = {
