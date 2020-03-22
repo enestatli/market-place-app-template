@@ -11,7 +11,8 @@ export const allRoutes = {
   memberRegister: "member-register",
   clientRegister: "client-register",
   feed: "feed",
-  search: "search"
+  search: "search",
+  searchResults: "search-results"
 };
 
 export const firebaseConfig = {
