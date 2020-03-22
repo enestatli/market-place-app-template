@@ -18,6 +18,6 @@ export class ClientRegisterPage implements OnInit {
   }
 
   goFeed() {
-    this.NavCtrl.navigateRoot(allRoutes.feed); // feed route
+    this.NavCtrl.navigateRoot(allRoutes.tabs); // feed route
   }
 }

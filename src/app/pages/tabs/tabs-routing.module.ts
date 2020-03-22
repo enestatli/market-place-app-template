@@ -1,20 +1,20 @@
-import { NgModule } from '@angular/core';
-import { RouterModule, Routes } from '@angular/router';
-import { TabsPage } from './tabs.page';
-import { allRoutes } from 'src/app/models/common-models';
+import { NgModule } from "@angular/core";
+import { RouterModule, Routes } from "@angular/router";
+import { TabsPage } from "./tabs.page";
+import { allRoutes } from "src/app/models/common-models";
 
 const routes: Routes = [
   {
-    path: '',
+    path: "",
     component: TabsPage,
     children: [
       {
-        path: allRoutes.home,
+        path: allRoutes.feed,
         children: [
           {
-            path: '',
+            path: "",
             loadChildren: () =>
-              import('../intro/intro.module').then(m => m.IntroPageModule)
+              import("../feed/feed.module").then(m => m.FeedPageModule)
           }
         ]
       },
@@ -22,9 +22,11 @@ const routes: Routes = [
         path: allRoutes.favorites,
         children: [
           {
-            path: '',
+            path: "",
             loadChildren: () =>
-              import('../favorites/favorites.module').then(m => m.FavoritesPageModule)
+              import("../favorites/favorites.module").then(
+                m => m.FavoritesPageModule
+              )
           }
         ]
       },
@@ -32,9 +34,9 @@ const routes: Routes = [
         path: allRoutes.profile,
         children: [
           {
-            path: '',
+            path: "",
             loadChildren: () =>
-              import('../profile/profile.module').then(m => m.ProfilePageModule)
+              import("../profile/profile.module").then(m => m.ProfilePageModule)
           }
         ]
       }
@@ -46,4 +48,4 @@ const routes: Routes = [
   imports: [RouterModule.forChild(routes)],
   exports: [RouterModule]
 })
-export class TabsPageRoutingModule { }
+export class TabsPageRoutingModule {}

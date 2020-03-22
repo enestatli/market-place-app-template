@@ -6,6 +6,28 @@
     padding-left: 0.7rem;
 }
 
+
+ion-card-content.test {
+    ion-item {
+        --ion-safe-area-left: 0px !important;
+        --padding-start: 0px !important;
+        --padding-bottom: 0px !important;
+    }
+}
+
+
+
+// ion-img {
+//     --margin-inline-end: 0px !important;
+// }
+
+// ::slotted([slot="start"]) {
+//     margin-left: unset;
+//     margin-right: unset;
+//     margin-inline-start: 0px;
+//     margin-inline-end: 0px !important;
+// }
+
 // ion-toolbar {
 //     --padding-end: 12px !important;
 //     --padding-bottom: 12px !important;

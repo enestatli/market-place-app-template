@@ -1,29 +1,34 @@
-import { Component } from '@angular/core';
-import { allRoutes } from 'src/app/models/common-models';
+import { Component, ViewChild, OnInit } from "@angular/core";
+import { allRoutes } from "src/app/models/common-models";
+import { IonTabs } from "@ionic/angular";
 
 @Component({
-  selector: 'app-tabs',
-  templateUrl: 'tabs.page.html',
-  styleUrls: ['tabs.page.scss']
+  selector: "app-tabs",
+  templateUrl: "tabs.page.html",
+  styleUrls: ["tabs.page.scss"]
 })
-export class TabsPage {
-  tabs =  [
+export class TabsPage implements OnInit {
+  tabs = [
     {
-      route: allRoutes.home,
-      title: 'Anasayfa',
-      icon: 'home'
+      route: allRoutes.feed,
+      title: "Anasayfa",
+      icon: "home"
     },
     {
       route: allRoutes.favorites,
-      title: 'Favoriler',
-      icon: 'heart'
+      title: "Favoriler",
+      icon: "heart"
     },
     {
       route: allRoutes.profile,
-      title: 'Profil',
-      icon: 'person'
+      title: "Profil",
+      icon: "person"
     }
   ];
+  @ViewChild("appTabs", { static: true }) appTabs: IonTabs;
   constructor() {}
-
+  ionViewDidEnter() {
+    this.appTabs.select(allRoutes.feed);
+  }
+  ngOnInit() {}
 }
