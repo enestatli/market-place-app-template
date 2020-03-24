@@ -12,7 +12,8 @@ export const allRoutes = {
   clientRegister: "client-register",
   feed: "feed",
   search: "search",
-  searchResults: "search-results"
+  searchResults: "search-results",
+  clientProfile: "client-profile"
 };
 
 export const firebaseConfig = {

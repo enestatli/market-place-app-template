@@ -79,6 +79,13 @@ const routes: Routes = [
       import("./pages/search-results/search-results.module").then(
         m => m.SearchResultsPageModule
       )
+  },
+  {
+    path: allRoutes.clientProfile,
+    loadChildren: () =>
+      import("./pages/client-profile/client-profile.module").then(
+        m => m.ClientProfilePageModule
+      )
   }
 ];
 @NgModule({
