@@ -1,11 +1,20 @@
 <ion-content fullscreen="true">
   <ng-container id="trend-items-wrapper">
-    <ion-item>
-      <h3 slot="start">Filter</h3>
-      <ion-button slot="end" expand="block" fill="clear" shape="round">
-        Clear Filter
-      </ion-button>
-    </ion-item>
+    <ion-toolbar class="ion-padding-horizontal">
+      <ion-buttons slot="start">
+        <ion-button>
+          Clear
+        </ion-button>
+      </ion-buttons>
+      <ion-buttons slot="end">
+        <ion-button>
+          Done
+        </ion-button>
+      </ion-buttons>
+
+      <ion-title>Filter</ion-title>
+    </ion-toolbar>
+
 
     <ion-list lines="none">
       <ion-card>
@@ -42,14 +51,12 @@
     </ion-list>
   </ng-container>
 
-  <!-- TODO, make apply button float/fab expand start to end -->
-  <ion-button expand="block" fill="outline">Apply
-  </ion-button>
 
-  <ion-fab vertical="bottom" horizontal="end" slot="fixed">
-    <ion-fab-button>
-      <ion-icon name="close-outline"></ion-icon>
-    </ion-fab-button>
+
+
+  <ion-fab vertical="bottom" style="width: 100%;" slot="fixed" class="ion-padding">
+    <ion-button expand="block" fill="solid">Apply
+    </ion-button>
   </ion-fab>
 
 </ion-content>
