@@ -1,0 +1,39 @@
+tabs-routing
+	feed page
+		search modal
+		client-profile page market profile
+			show-on-the-map modal
+			price-list modal
+			reviews modal
+			recently ordered (no navigation)
+			order modal
+		search-results page
+			filter modal
+			client-profile page
+	search page
+		search-results page
+	chat page
+	favourites page
+	profile page
+		orders page
+			feedback modal
+
+
+welcome
+	register
+		mermbership-selection
+			member-register
+				phone register
+					confirmation-phone
+						member-info
+			client-register
+				client-info
+					confirmation-phone
+	login
+		forgot-password
+		feed
+	explore
+		feed	
+
+	
+		
